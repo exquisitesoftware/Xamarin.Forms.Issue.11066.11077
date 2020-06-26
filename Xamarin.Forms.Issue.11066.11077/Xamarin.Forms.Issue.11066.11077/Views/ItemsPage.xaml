@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Xamarin.Forms.Issue._11066._11077.Views.ItemsPage"
+             Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+
+    <StackLayout Padding="10">
+        <Label>Without Character Spacing:</Label>
+        
+        <Button CharacterSpacing="1" ImageSource="test_image.png" Text="Testing" ContentLayout="Left,100" BackgroundColor="#ececec" Padding="10"/>
+
+        <Label>Character Spacing:</Label>
+        <Button ImageSource="test_image.png" Text="Testing" ContentLayout="Left,100" BackgroundColor="#ececec" Padding="10" />
+    </StackLayout>
+</ContentPage>
